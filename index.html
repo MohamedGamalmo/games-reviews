@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+  <!--start loading page -->
+  <div class="loading d-none">
+    <span class="loader"></span>
+  </div>
+<!--end loading page -->
+
+
+
+
+<!--start home page -->
+<div class="home">
+  <!--start nav  -->
+<div class="main-nav mb-5">
+  <div class="container nav-color  rounded-4 col-md-6 col-lg-9">
+  <nav class="navbar navbar-expand-lg">
+      <div class="container position-sticky">
+        <a class="navbar-brand" href="#">
+      
+          <h4 class="logo-name"> <img src="images/logo-sm.png" class="w-25" alt=""> GAME REVIEWS</h4></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav nav-nav">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" id="mmorpg" href="#">Mmorpg</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link"  id="shooter" href="#">Shooter</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" id="sailing" href="#">Sailing</a>
+            </li><li class="nav-item ">
+              <a class="nav-link" id="permadeath" href="#">Permadeath</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " id="superhero" href="#">Superhero</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" id="pixel" href="#">Pixel</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- end nav -->
+
+    <div class="container ">
+        <div class="row p-2 mb-1 games">
+          <!-- <div class="col-md-3 ">
+            <div class="content " >
+              <div>
+                <img  src=""class="d-block w-100 p-2" alt="game image">
+              </div>
+                <div class="hstack justify-content-between p-2">
+                 <h4 class="small"></h4>
+                 <span class="free text-bg-primary ">Free</span>
+              </div>
+                <p class="opacity-50 text-center"></p>
+              <hr class="m-0">
+              <div class="footer d-flex justify-content-between p-2">
+                <h6>mmorpg</h6>
+                <h6>pc(windows)</h6>
+              </div>
+            </div>
+        </div> -->
+           
+        </div>
+    </div>
+  </div>
+<!--end home page -->
+
+<!--start details page -->
+    <div class="details d-none">
+      <div class="container">
+         <header class="hstack justify-content-between">
+            <h1 class="text-center h3 py-4">Details Game</h1>
+            <button class="btn-close btn-close-white" id="btnClose"></button>
+         </header>
+
+        <div class="container">
+          <div class="row det">
+            <div class="col-md-6">
+                <div class="detImg">
+                  <img src="" class="d-block w-100" alt="">
+                </div>
+              </div>
+                <div class="col-md-6">
+                  <div class="detText">
+                  <h2>Title: ${data.title}</h2>
+                  <h4>Category: <span class="category">${data.generc}</span></h4>
+                  <h4>Platform: <span class="platform">${data.platform}</span></h4>
+                  <h4>Status: <span class="status">${data.status}</span></h4>
+                  <p class="description">${data.description}</p>
+                  <button class="btn btn-outline-warning text-white">Show Games</button>
+                </div>
+                </div>
+
+          </div>
+        </div>
+
+      </div>
+   </div>
+<!--end details page -->
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
